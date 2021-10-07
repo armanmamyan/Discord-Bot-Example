@@ -6,7 +6,7 @@ const client = new Client({
 const csv = require("csv");
 const fs = require("fs");
 const privateMessage = require("./private-message");
-const configs = require("./configs");
+const configs = require("./config.json");
 
 client.on("ready", () => {
   console.log(`Logged in as ${client.user.tag}!`);
