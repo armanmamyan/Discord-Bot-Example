@@ -1,0 +1,25 @@
+{
+  "name": "discord",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@discordjs/rest": "^0.1.0-canary.0",
+    "bufferutil": "^4.0.4",
+    "csv": "^5.5.3",
+    "discord-api-types": "^0.23.1",
+    "discord.js": "^13.2.0",
+    "dotenv": "^10.0.0",
+    "erlpack": "github:discord/erlpack",
+    "events": "^3.3.0",
+    "fs": "^0.0.1-security",
+    "utf-8-validate": "^5.0.6",
+    "zlib-sync": "^0.1.7"
+  }
+}
