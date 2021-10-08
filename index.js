@@ -1,5 +1,5 @@
 require("dotenv").config();
-const { Client, Intents, MessageEmbed, MessageButton } = require("discord.js");
+const { Client, Intents, MessageEmbed } = require("discord.js");
 const client = new Client({
   intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES],
 });
@@ -26,17 +26,12 @@ client.on("ready", () => {
         // .setDescription('some description')
         // .setImage('image url')
 
-        let button = new MessageButton()
-        .setStyle('red') //default: blurple
-        .setLabel('My First Button!') //default: NO_LABEL_PROVIDED
-        .setID('click_to_function') 
-
       const embed = await new MessageEmbed()
         .setTitle('Welcome to Raccoon Verse')
         .setDescription('New NFT collection which will become a new trend of NFT industry. Whitelist is open now, so hurry up claim yours.  https://discord.gg/FTBKZeJHt2')
         .setTimestamp();
 
-        privateMessage(client, discordId, embed, attachment, button);
+        privateMessage(client, discordId, embed, attachment);
     })
     .on("end", () => {
       console.log("CSV file successfully processed");

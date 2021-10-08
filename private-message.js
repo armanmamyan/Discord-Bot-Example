@@ -1,4 +1,4 @@
-module.exports = (client, discordId, embed, attachment, button) => {
+module.exports = (client, discordId, embed, attachment) => {
     ;
 
     client.users
@@ -8,7 +8,6 @@ module.exports = (client, discordId, embed, attachment, button) => {
         .send({
             embeds: [embed],
             files: [attachment],
-            buttons: [button],
         })
         .then(() => process.exit())
         .catch(err => console.log(err))
