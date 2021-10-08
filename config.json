@@ -1,3 +1,4 @@
 {
-    "tokenID": "YOUR_TOKE_ID"
+    "tokenID": "YOUR_TOKEN_ID",
+    "image": "./assets/imag.png"
 }

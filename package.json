@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "generate": "node ./index.js"
   },
   "keywords": [],
   "author": "",
@@ -12,7 +13,9 @@
   "dependencies": {
     "@discordjs/rest": "^0.1.0-canary.0",
     "bufferutil": "^4.0.4",
+    "canvas": "^2.8.0",
     "csv": "^5.5.3",
+    "dataimageattachment": "^1.1.2",
     "discord-api-types": "^0.23.1",
     "discord.js": "^13.2.0",
     "dotenv": "^10.0.0",
@@ -20,6 +23,7 @@
     "events": "^3.3.0",
     "fs": "^0.0.1-security",
     "utf-8-validate": "^5.0.6",
+    "wokcommands": "^1.4.9",
     "zlib-sync": "^0.1.7"
   }
 }
